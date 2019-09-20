@@ -7,16 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="700" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="314*"/>
+            <ColumnDefinition Width="479*"/>
+        </Grid.ColumnDefinitions>
         <TextBox x:Name="txtNumero1R" HorizontalAlignment="Left" Height="30" Margin="34,148,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="140" RenderTransformOrigin="0.012,0.413"/>
-        <TextBlock HorizontalAlignment="Left" Margin="257,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.873,-4.189" FontSize="22" FontWeight="Bold"><Run Text="Á"/><Run Text="reas de Figuras Geom"/><Run Text="é"/><Run Text="tricas"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="257,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.873,-4.189" FontSize="22" FontWeight="Bold" Grid.ColumnSpan="2"><Run Text="Á"/><Run Text="reas de Figuras Geom"/><Run Text="é"/><Run Text="tricas"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="45,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.873,-4.189"/>
         <TextBlock HorizontalAlignment="Left" Margin="34,85,0,0" TextWrapping="Wrap" Text="Rectangulo" VerticalAlignment="Top" RenderTransformOrigin="0.873,-4.189" FontSize="20"/>
         <TextBlock HorizontalAlignment="Left" Margin="34,119,0,0" TextWrapping="Wrap" Text="Base" VerticalAlignment="Top" RenderTransformOrigin="0.873,-4.189" FontSize="18"/>
-        <TextBlock HorizontalAlignment="Left" Margin="280,119,0,0" TextWrapping="Wrap" Text="altura" VerticalAlignment="Top" FontSize="18"/>
-        <TextBox x:Name="txtNumero2R" HorizontalAlignment="Left" Height="30" Margin="280,148,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.012,0.413"/>
-        <Button Click="BtnRectangulo_Click" x:Name="btnRectangulo" Content="Calcular" HorizontalAlignment="Left" Margin="479,108,0,0" VerticalAlignment="Top" Width="95" RenderTransformOrigin="0.557,0.3" FontSize="18" Height="35"/>
-        <TextBlock HorizontalAlignment="Left" Margin="599,92,0,0" TextWrapping="Wrap" Text="Resultado del area" VerticalAlignment="Top" FontSize="18"/>
-        <TextBlock  x:Name="lblResultadoRR" HorizontalAlignment="Left" Margin="657,129,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="18" Width="88"/>
+        <TextBlock HorizontalAlignment="Left" Margin="280,119,0,0" TextWrapping="Wrap" Text="altura" VerticalAlignment="Top" FontSize="18" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtNumero2R" HorizontalAlignment="Left" Height="30" Margin="280,148,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.012,0.413" Grid.ColumnSpan="2"/>
+        <Button Click="BtnRectangulo_Click" x:Name="btnRectangulo" Content="Calcular" HorizontalAlignment="Left" Margin="164.8,108,0,0" VerticalAlignment="Top" Width="95" RenderTransformOrigin="0.557,0.3" FontSize="18" Height="35" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="284.8,92,0,0" TextWrapping="Wrap" Text="Resultado del area" VerticalAlignment="Top" FontSize="18" Grid.Column="1"/>
+        <TextBlock  x:Name="lblResultadoRR" HorizontalAlignment="Left" Margin="342.8,129,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="18" Width="88" Grid.Column="1"/>
         <TextBox x:Name="txtNumero1RR" HorizontalAlignment="Left" Height="30" Margin="34,148,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="140" RenderTransformOrigin="0.012,0.413"/>
         <TextBlock HorizontalAlignment="Left" Margin="45,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.873,-4.189"/>
 
@@ -28,12 +32,12 @@
 
         <TextBlock HorizontalAlignment="Left" Margin="34,210,0,0" TextWrapping="Wrap" Text="Triangulo" VerticalAlignment="Top" RenderTransformOrigin="0.873,-4.189" FontSize="20"/>
         <TextBlock HorizontalAlignment="Left" Margin="34,244,0,0" TextWrapping="Wrap" Text="Base" VerticalAlignment="Top" RenderTransformOrigin="0.873,-4.189" FontSize="18"/>
-        <TextBlock HorizontalAlignment="Left" Margin="280,244,0,0" TextWrapping="Wrap" Text="altura" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="280,244,0,0" TextWrapping="Wrap" Text="altura" VerticalAlignment="Top" FontSize="18" Grid.ColumnSpan="2"/>
         <TextBox x:Name="txtNumero1T" HorizontalAlignment="Left" Height="30" Margin="34,273,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.012,0.413"/>
-        <TextBox x:Name="txtNumero2T" HorizontalAlignment="Left" Height="30" Margin="280,273,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.012,0.413"/>
-        <Button Click="BtnTriangulo_Click" x:Name="btnTriangulo" Content="Calcular" HorizontalAlignment="Left" Margin="479,233,0,0" VerticalAlignment="Top" Width="95" RenderTransformOrigin="0.557,0.3" FontSize="18" Height="35"/>
-        <TextBlock HorizontalAlignment="Left" Margin="599,217,0,0" TextWrapping="Wrap" Text="Resultado del area" VerticalAlignment="Top" FontSize="18"/>
-        <TextBlock  x:Name="lblResultadoT" HorizontalAlignment="Left" Margin="657,254,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="18" Width="88"/>
+        <TextBox x:Name="txtNumero2T" HorizontalAlignment="Left" Height="30" Margin="280,273,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.012,0.413" Grid.ColumnSpan="2"/>
+        <Button Click="BtnTriangulo_Click" x:Name="btnTriangulo" Content="Calcular" HorizontalAlignment="Left" Margin="164.8,233,0,0" VerticalAlignment="Top" Width="95" RenderTransformOrigin="0.557,0.3" FontSize="18" Height="35" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="284.8,217,0,0" TextWrapping="Wrap" Text="Resultado del area" VerticalAlignment="Top" FontSize="18" Grid.Column="1"/>
+        <TextBlock  x:Name="lblResultadoT" HorizontalAlignment="Left" Margin="342.8,254,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="18" Width="88" Grid.Column="1"/>
 
 
 
@@ -41,9 +45,9 @@
         <TextBlock HorizontalAlignment="Left" Margin="37,332,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.873,-4.189"/>
         <TextBlock HorizontalAlignment="Left" Margin="37,337,0,0" TextWrapping="Wrap" Text="Circulo" VerticalAlignment="Top" RenderTransformOrigin="0.873,-4.189" FontSize="20"/>
         <TextBlock HorizontalAlignment="Left" Margin="37,369,0,0" TextWrapping="Wrap" Text="Radio" VerticalAlignment="Top" RenderTransformOrigin="0.873,-4.189" FontSize="18"/>
-        <Button Click="BtnCirculo_Click" x:Name="btnCirculo" Content="Calcular" HorizontalAlignment="Left" Margin="258,358,0,0" VerticalAlignment="Top" Width="95" RenderTransformOrigin="0.557,0.3" FontSize="18" Height="35"/>
-        <TextBlock HorizontalAlignment="Left" Margin="378,342,0,0" TextWrapping="Wrap" Text="Resultado del area" VerticalAlignment="Top" FontSize="18"/>
-        <TextBlock  x:Name="lblResultadoC" HorizontalAlignment="Left" Margin="436,379,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="18" Width="88"/>
+        <Button Click="BtnCirculo_Click" x:Name="btnCirculo" Content="Calcular" HorizontalAlignment="Left" Margin="258,358,0,0" VerticalAlignment="Top" Width="95" RenderTransformOrigin="0.557,0.3" FontSize="18" Height="35" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="63.8,342,0,0" TextWrapping="Wrap" Text="Resultado del area" VerticalAlignment="Top" FontSize="18" Grid.Column="1"/>
+        <TextBlock  x:Name="lblResultadoC" HorizontalAlignment="Left" Margin="121.8,379,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="18" Width="88" Grid.Column="1"/>
 
 
 
@@ -53,11 +57,11 @@
         <TextBlock HorizontalAlignment="Left" Margin="34,466,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.873,-4.189"/>
         <TextBlock HorizontalAlignment="Left" Margin="34,473,0,0" TextWrapping="Wrap" Text="Trapecio" VerticalAlignment="Top" RenderTransformOrigin="0.873,-4.189" FontSize="20"/>
         <TextBlock HorizontalAlignment="Left" Margin="34,503,0,0" TextWrapping="Wrap" Text="Base Mayor" VerticalAlignment="Top" RenderTransformOrigin="0.873,-4.189" FontSize="18"/>
-        <TextBlock HorizontalAlignment="Left" Margin="280,503,0,0" TextWrapping="Wrap" Text="altura" VerticalAlignment="Top" FontSize="18"/>
-        <TextBox x:Name="txtNumero2Tra" HorizontalAlignment="Left" Height="30" Margin="280,532,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.012,0.413"/>
-        <Button Click="BtnTrapecio_Click" x:Name="btnTrapecio" Content="Calcular" HorizontalAlignment="Left" Margin="479,492,0,0" VerticalAlignment="Top" Width="95" RenderTransformOrigin="0.557,0.3" FontSize="18" Height="35"/>
-        <TextBlock HorizontalAlignment="Left" Margin="599,476,0,0" TextWrapping="Wrap" Text="Resultado del area" VerticalAlignment="Top" FontSize="18"/>
-        <TextBlock  x:Name="lblResultadoTra" HorizontalAlignment="Left" Margin="657,513,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="18" Width="88"/>
+        <TextBlock HorizontalAlignment="Left" Margin="280,503,0,0" TextWrapping="Wrap" Text="altura" VerticalAlignment="Top" FontSize="18" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtNumero2Tra" HorizontalAlignment="Left" Height="30" Margin="280,532,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.012,0.413" Grid.ColumnSpan="2"/>
+        <Button Click="BtnTrapecio_Click" x:Name="btnTrapecio" Content="Calcular" HorizontalAlignment="Left" Margin="164.8,492,0,0" VerticalAlignment="Top" Width="95" RenderTransformOrigin="0.557,0.3" FontSize="18" Height="35" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="284.8,476,0,0" TextWrapping="Wrap" Text="Resultado del area" VerticalAlignment="Top" FontSize="18" Grid.Column="1"/>
+        <TextBlock  x:Name="lblResultadoTra" HorizontalAlignment="Left" Margin="342.8,513,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="18" Width="88" Grid.Column="1"/>
         <TextBox x:Name="txtNumero12Tra" HorizontalAlignment="Left" Height="30" Margin="37,616,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="140" RenderTransformOrigin="0.012,0.413"/>
         <TextBlock HorizontalAlignment="Left" Margin="37,587,0,0" TextWrapping="Wrap" Text="Base Menor" VerticalAlignment="Top" RenderTransformOrigin="0.873,-4.189" FontSize="18"/>
 
